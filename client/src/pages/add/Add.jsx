@@ -100,7 +100,7 @@ const Add = () => {
                 />
               </div>
               <button onClick={handleUpload}>
-                {uploading ? "uploading" : "Upload"}
+                {uploading ? "Uploading..." : "Upload"}
               </button>
             </div>
             <label htmlFor="">Description</label>

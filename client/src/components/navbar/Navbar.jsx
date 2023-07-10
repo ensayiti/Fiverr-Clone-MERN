@@ -45,8 +45,8 @@ function Navbar() {
         </div>
         <div className="links">
           <span>eFreelance Business</span>
-          <span>Explore</span>
-          <span>English</span>
+          {/* <span>Explore</span> */}
+          {/* <span>English</span> */}
           {!currentUser?.isSeller && <span>Become a Seller</span>}
           {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>
@@ -59,9 +59,9 @@ function Navbar() {
                       <Link className="link" to="/mygigs">
                         Gigs
                       </Link>
-                      {/* <Link className="link" to="/add">
+                      <Link className="link" to="/add">
                         Add New Gig
-                      </Link> */}
+                      </Link>
                     </>
                   )}
                   <Link className="link" to="/orders">
