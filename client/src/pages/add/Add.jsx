@@ -62,7 +62,7 @@ const Add = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     mutation.mutate(state);
-    // navigate("/mygigs")
+    navigate("/mygigs")
   };
 
   return (
@@ -89,6 +89,7 @@ const Add = () => {
               <div className="imagesInputs">
                 <label htmlFor="">Cover Image</label>
                 <input
+                  name="cover"
                   type="file"
                   onChange={(e) => setSingleFile(e.target.files[0])}
                 />
