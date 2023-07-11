@@ -80,6 +80,7 @@ const Add = () => {
             />
             <label htmlFor="">Category</label>
             <select name="cat" id="cat" onChange={handleChange}>
+              <option>Select category</option>
               <option value="design">Design</option>
               <option value="web">Web Development</option>
               <option value="animation">Animation</option>
@@ -143,7 +144,7 @@ const Add = () => {
             <label htmlFor="">Add Features</label>
             <form action="" className="add" onSubmit={handleFeature}>
               <input type="text" placeholder="e.g. page design" />
-              <button type="submit">add</button>
+              <button type="submit">Add</button>
             </form>
             <div className="addedFeatures">
               {state?.features?.map((f) => (
