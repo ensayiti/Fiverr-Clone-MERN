@@ -62,7 +62,7 @@ const Add = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     mutation.mutate(state);
-    navigate("/gigs?cat=design")
+    // navigate("/mygigs")
   };
 
   return (
@@ -100,7 +100,7 @@ const Add = () => {
                 />
               </div>
               <button onClick={handleUpload}>
-                {uploading ? "Uploading..." : "Upload"}
+                {uploading ? "uploading" : "Upload"}
               </button>
             </div>
             <label htmlFor="">Description</label>
